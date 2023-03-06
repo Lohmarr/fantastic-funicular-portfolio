@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lohmar's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+<!-- Header -->
+    <header>
+      <h1>Welcome! This is my</h1>
+      <nav>
+          <div class="nav-item">
+            <a href="#about">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="#projects">Projects</a>
+          </div>
+          <div class="nav-item">
+            <a href="#contact">Contact</a>
+          </div>
+      </nav>
+    </header>
+    
+    <!-- About -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="assets/images/me (2).png" alt="A headshot of Lohmar.">
+            <p>
+            Hello! My name is Lohmar L'Amour. I'm currently enrolled at the UNCC
+            School of Professional Studies to obtain my certification in Full-Stack
+            Web Development. I formerly brought style and efficiency to my jobs as a touring merchandising manager,
+            IATSE stage-hand, and host of a bar-hopping pedal-bike, and I look forward to bringing that same gusto 
+            to whatever tasks you need handling!
+            </p>
+            <h3>Acquired Skillsets</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>Bash</li>
+            </ul>
+            <h3>Upcoming Skillsets</h3>
+            <ul>
+                <li>JavaScript/jQuery</li>
+                <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                <li>MySQL</li>
+                <li>API Design</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Amazon Web Services</li>
+                <li>C#</li>
+            </ul>
+        </section>
+        
+        <!-- Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="card" id="featured">
+                <h3>&#9733 Featured Project &#9733</h3>
+                <p>An example.</p>
+                <a href="project-1"><img src="https://cdn.pixabay.com/photo/2016/04/21/15/10/yellow-1343606_960_720.jpg" alt="Example Project 1"></a>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>An example.</p>
+                <a href="project-2"><img src="https://cdn.pixabay.com/photo/2019/03/21/05/27/flower-4070280_960_720.jpg" alt="Example Project 2"></a>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>An example.</p>
+                <a href="project-3"><img src="https://cdn.pixabay.com/photo/2022/03/28/18/41/hatching-7098132_960_720.png" alt="Example Project 3"></a>
+            </div>
+            <div class="card">
+                <h3>Project 4</h3>
+                <p>An example.</p>
+                <a href="project-4"><img src="https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_960_720.jpg" alt="Example Project 4"></a>
+            </div>
+      </section>
+      
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me through any of the following methods!</p>
+        <ul>
+          <li><a href="https://github.com/Lohmarr">Github</a></li>
+          <li><a href="mailto:getlohmar@gmail.com">Email</a></li>
+          <li><a href="#contact-form">Contact form</a></li>
+        </ul>
+        <form id="contact-form" action="submit-form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Lohmar L'Amour 2023 </p>
+    </footer>
+  </body>
+</html>
