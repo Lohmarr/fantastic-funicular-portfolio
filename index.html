@@ -7,107 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lohmar's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+ </head>
 
   <body>
-<!-- Header -->
+    <!-- Navbar -->
     <header>
-      <h1>Welcome! This is my</h1>
-      <nav>
-          <div class="nav-item">
-            <a href="#about">About</a>
-          </div>
-          <div class="nav-item">
-            <a href="#projects">Projects</a>
-          </div>
-          <div class="nav-item">
-            <a href="#contact">Contact</a>
-          </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Welcome to my </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </header>
     
     <!-- About -->
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="assets/images/me (2).png" alt="A headshot of Lohmar.">
-            <p>
-            Hello! My name is Lohmar L'Amour. I'm currently enrolled at the UNCC
-            School of Professional Studies to obtain my certification in Full-Stack
-            Web Development. I formerly brought style and efficiency to my jobs as a touring merchandising manager,
-            IATSE stage-hand, and host of a bar-hopping pedal-bike, and I look forward to bringing that same gusto 
-            to whatever tasks you need handling!
-            </p>
-            <h3>Acquired Skillsets</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git</li>
-                <li>Bash</li>
-            </ul>
-            <h3>Upcoming Skillsets</h3>
-            <ul>
-                <li>JavaScript/jQuery</li>
-                <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
-                <li>MySQL</li>
-                <li>API Design</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Amazon Web Services</li>
-                <li>C#</li>
-            </ul>
-        </section>
-        
-        <!-- Projects -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="card" id="featured">
-                <h3>&#9733 Featured Project &#9733</h3>
-                <p>An example.</p>
-                <a href="project-1"><img src="https://cdn.pixabay.com/photo/2016/04/21/15/10/yellow-1343606_960_720.jpg" alt="Example Project 1"></a>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <section id="about">
+                <h2>About Me</h2>
+                <img class="img-fluid" src="assets/images/me (2).png" alt="A headshot of Lohmar.">
+                <p>
+                Hello! My name is Lohmar L'Amour. I'm currently enrolled at the UNCC
+                School of Professional Studies to obtain my certification in Full-Stack
+                Web Development. I brought style and efficiency to my previous jobs as a touring merchandising manager,
+                IATSE stage-hand, and host of a bar-hopping PedalPub, and I look forward to bringing that same panache 
+                to whatever tasks you need handling!
+                </p>
+                <h3>Acquired Skillsets</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">Git</li>
+                    <li class="list-group-item">Bash</li>
+                </ul>
+                <h3>Upcoming Skillsets</h3>
+                <div class="container">
+                    <ul class="list-group">
+                        <li class="list-group-item">JavaScript/jQuery</li>
+                        <li class="list-group-item">MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                        <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">API Design</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">Amazon Web Services</li>
+                         <li class="list-group-item">C#</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>An example.</p>
-                <a href="project-2"><img src="https://cdn.pixabay.com/photo/2019/03/21/05/27/flower-4070280_960_720.jpg" alt="Example Project 2"></a>
-            </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>An example.</p>
-                <a href="project-3"><img src="https://cdn.pixabay.com/photo/2022/03/28/18/41/hatching-7098132_960_720.png" alt="Example Project 3"></a>
-            </div>
-            <div class="card">
-                <h3>Project 4</h3>
-                <p>An example.</p>
-                <a href="project-4"><img src="https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_960_720.jpg" alt="Example Project 4"></a>
-            </div>
-      </section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="card" id="featured">
+      <h3><span class="badge bg-warning text-dark">&#9733 Featured Project &#9733</span></h3>
+      <img src="https://cdn.pixabay.com/photo/2016/04/21/15/10/yellow-1343606_960_720.jpg" class="card-img-top" alt="Example Project 1">
+      <div class="card-body">
+        <h5 class="card-title">Project 1</h5>
+        <p class="card-text">An example.</p>
+        <a href="project-1" class="btn btn-primary">View Project</a>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2019/03/21/05/27/flower-4070280_960_720.jpg" class="card-img-top" alt="Example Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">An example.</p>
+          <a href="project-2" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
       
-      <!-- Contact -->
-      <section id="contact">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2022/03/28/18/41/hatching-7098132_960_720.png" class="card-img-top" alt="Example Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">An example.</p>
+          <a href="project-3" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2022/07/17/11/59/amber-7327252_960_720.jpg" class="card-img-top" alt="Example Project 4">
+        <div class="card-body">
+          <h5 class="card-title">Project 4</h5>
+          <p class="card-text">An example.</p>
+          <a href="project-4" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
         <h2>Contact</h2>
         <p>Feel free to contact me through any of the following methods!</p>
-        <ul>
-          <li><a href="https://github.com/Lohmarr">Github</a></li>
-          <li><a href="mailto:getlohmar@gmail.com">Email</a></li>
-          <li><a href="#contact-form">Contact form</a></li>
+        <ul class="list-unstyled">
+            <li class="list-inline-item"><a href="https://github.com/Lohmarr" class="btn btn-primary">Github</a></li>
+            <li class="list-inline-item"><a href="mailto:getlohmar@gmail.com" class="btn btn-primary">Email</a></li>
+            <li class="list-inline-item"><a href="#contact-form" class="btn btn-primary">Contact form</a></li>
         </ul>
         <form id="contact-form" action="submit-form.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Submit</button>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </section>
-      
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Lohmar L'Amour 2023 </p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; Lohmar L'Amour 2023 </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript files -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</body>
 </html>
+      
