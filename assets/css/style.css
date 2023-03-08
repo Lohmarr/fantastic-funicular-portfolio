@@ -117,6 +117,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
     }
     
       .card {
@@ -156,6 +157,9 @@
      footer {
     display: flex;
     background-color: #070707;
+    background-image: url(../images/undraw_Developer_activity_re_39tg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
      }
 
      footer p {
