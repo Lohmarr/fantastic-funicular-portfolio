@@ -8,7 +8,7 @@ This is my portfolio website that showcases my skills, projects, and contact inf
 
 You can view a live demo of the website here: https://lohmarr.github.io/fantastic-funicular-portfolio/
 
-![Portfolio](F:\Github\Bootcamp\Portfolio-Site\assets\images\Lohmar-s-Portfolio.png "My portfolio")
+![Portfolio](/assets/images/Lohmar-s-Portfolio.png "My portfolio")
 
 
 ## Features
