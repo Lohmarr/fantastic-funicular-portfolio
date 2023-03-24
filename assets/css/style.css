@@ -88,10 +88,6 @@
     text-align: center;
     font-family: var(--font)
    }
-   
-   #about li {
-
-   }
 
 /* Projects */
 #projects {
@@ -103,7 +99,7 @@
     #projects h2, #projects h3, #projects h5 {
         border-radius: 0;
         background-color: rgb(32, 28, 28);
-        color: var(--nav-tan);
+        color: white;
         border-radius: var(--radius-set);
     }
 
@@ -146,6 +142,17 @@
 
       #featured {
         width: 100%;
+      }
+
+      #projects a {
+        display: flex;
+        justify-content: center;
+      }
+
+      #projects p {
+        color: black;
+        font-size: large;
+        text-align: center;
       }
 
       /* Contact */
